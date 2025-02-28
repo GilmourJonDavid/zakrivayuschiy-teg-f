@@ -1,0 +1,273 @@
+/* Здесь вы напишете основную часть стилей страницы.
+
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+
+*/
+
+.page {
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: "wght" var(--font-weight-normal, 400);
+  color: var(--font-color, #000000);
+  font-size: var(--main-font-size, 18px);
+  line-height: var(--main-line-height, 21px);
+  padding-block: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--section-gap, 100px);
+
+}
+
+@supports (font-variation-settings: normal) {
+    .page {
+        font-family: var(--main-font), sans-serif;
+    }
+} 
+
+.page-background {
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    background-image: 
+        repeating-linear-gradient(
+            to right,
+            #d3d3d3,
+            #d3d3d3 2px,
+            transparent 2px,
+            transparent 4px
+        ),
+
+        repeating-linear-gradient(
+            to bottom,
+            #d3d3d3,
+            #d3d3d3 2px,
+            transparent 2px,
+            transparent 4px
+        ),
+
+        linear-gradient(
+            to bottom,
+            #e7e7e7 0.01%,
+            #1a1a1a 100%
+        );
+}
+
+.accent-weight {
+    font-variation-settings: "wght" var(--font-weight-extra-bold, 800);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid var(--main-border-color, #000000);
+    font-family: var(--accent-font);
+    padding-block: var(--header-padding);
+  
+}
+
+.rubber {
+    inline-size: var(--rubber-block-width);
+    
+   
+   
+}
+
+.heading {
+    font-size: var(--main-heading-size);
+    line-height: var(--main-heading-line-height);
+    font-family: var(--accent-font);
+    text-transform: uppercase;
+    text-align: center;
+ 
+}
+
+
+.subheading {
+    font-size: var(--subheading-size);
+    line-height: var(--subheading-line-height);
+    text-transform: uppercase;
+ 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cards-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--main-border-color, #000000) 
+}
+
+.card-heading {
+    text-align: start;
+    align-self: baseline;
+    padding-block: 5px;
+    padding-inline: 10px;
+    font-family: var(--main-font), sans-serif;
+    color: var(--font-color, #000000);
+    font-size: var(--main-font-size, 18px);
+    line-height: var(--main-line-height, 21px);
+    letter-spacing: 0%;
+}
+
+.decorations-container {
+    position: relative;
+}
+
+.watermark {
+    position: absolute;
+    top: 25px;
+    right: 13px;
+    color: var(--font-color, #000000);
+    font-family: var(--accent-font, sans-serif);
+    font-size: 14px;
+    text-transform: uppercase;
+    content:'';
+    opacity: 0.5;
+    mix-blend-mode: hard-light;
+    text-shadow:
+        -1px 0 rgba(255, 255, 255, 1),
+        0 1px rgba(255, 255, 255, 1), 
+        1px 0 rgba(255, 255, 255, 1),
+        0 -1px rgba(255, 255, 255, 1);
+}
+
+@supports (-webkit-text-stroke: 1px #fff) {
+    .watermark {
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(255, 255, 255, 1);
+        text-shadow: none;
+}
+}
+
+.card-image {
+    object-fit: cover;
+    width: 100%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 27px;
+    padding-block: 25px;
+    padding-inline: 25px;
+
+}
+
+.buttons-container {
+    align-self: flex-end;
+    display: flex;
+    gap: 5px;
+}
+
+.button {
+    border: 2px solid var(--main-border-color, #000000);
+    background-color: #FFFFFF;
+}
+
+.card__like-button {
+    inline-size: 130px;
+    block-size: 38px;
+ 
+}
+
+.button__text {
+    display: block;
+    font-family: var(--accent-font), sans-serif;
+    align-self: center;
+    justify-self: center;
+    font-size: 14px;
+    line-height: 12.6px;
+}
+
+.card__icon-button {
+    border: none;
+    background-color: transparent;
+    justify-self: center;
+    align-self: center;
+    padding: 0;
+}
+
+.save-button {
+    inline-size: 293px;
+    block-size: 38px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+
+.save-dialog:not([open]) {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+
+.save-dialog {
+    max-inline-size: 353px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.dialog-content {
+    display: flex;
+    gap: 12px;
+}
+
+.floppy {
+    width: 21px;
+    height: 21px;
+}
+
+.floppy-opened {
+    width: 39px;
+    height: 39px;
+}
+
+
+  
+
+
+@media (width <= 375px) {
+    .rubber {
+        max-inline-size: 375px;
+        inline-size: 100vh;
+    }
+
+    .save-button {
+        flex-direction: column;
+        inline-size: 306px;
+        block-size: 84px;
+    }
+}

@@ -1,0 +1,19 @@
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-font: 'Inter Variable';
+    --accent-font: 'Press Start 2P';
+    --main-font-size: 18px;
+    --main-line-height: 21px;
+    --font-weight-extra-bold: 800;
+    --font-weight-normal: 400;
+    --font-color: #000000;
+    --main-gap: 52px;
+    --section-gap: 100px;
+    --main-heading-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
+    --main-heading-line-height: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
+    --subheading-size: clamp(0.875rem, 0.677rem + 0.85vw, 1.438rem);
+    --subheading-line-height: clamp(0.875rem, 0.677rem + 0.85vw, 1.438rem);
+    --rubber-block-width: clamp(375px, 260.5634px + 30.5164vw, 700px);
+    --header-padding: clamp(7.5rem, 7.324rem + 0.75vw, 8rem);
+    --main-border-color: #000000;
+}
