@@ -215,8 +215,8 @@
 }
 
 .save-button {
-    inline-size: 293px;
-    block-size: 38px;
+    inline-size: 335px;
+    block-size: 55px;
     display: flex;
     gap: 8px;
     align-items: center;
@@ -225,24 +225,50 @@
     
 }
 
+.dialog-button {
+    inline-size: 293px;
+    block-size: 38px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
 
 .save-dialog:not([open]) {
     opacity: 0;
     pointer-events: none;
-  }
+  } 
 
 
 .save-dialog {
-    max-inline-size: 353px;
+    inline-size: 353px;
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    border: 2px solid var(--main-border-color, #000000);
+    overflow: hidden;
+    position: fixed; 
+    inset: 0;
+}
+
+.save-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .dialog-content {
     display: flex;
     gap: 12px;
+}
+
+.dialog-text {
+    font-family: var(--accent-font, sans-serif);
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    max-width: 234px;
 }
 
 .floppy {
