@@ -7,7 +7,7 @@
     --font-weight-extra-bold: 800;
     --font-weight-normal: 400;
     --font-color: #000000;
-    --main-gap: 52px;
+    --main-gap: 50px;
     --section-gap: 100px;
     --main-heading-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
     --main-heading-line-height: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
@@ -16,4 +16,6 @@
     --rubber-block-width: clamp(375px, 260.5634px + 30.5164vw, 700px);
     --header-padding: clamp(7.5rem, 7.324rem + 0.75vw, 8rem);
     --main-border-color: #000000;
+    --heart-accent-color: #000000;
+    --heart-sparks-color: #FF0000;
 }

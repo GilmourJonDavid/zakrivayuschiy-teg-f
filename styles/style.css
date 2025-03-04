@@ -23,277 +23,360 @@
   flex-direction: column;
   align-items: center;
   gap: var(--section-gap, 100px);
-
 }
 
 @supports (font-variation-settings: normal) {
-    .page {
-        font-family: var(--main-font), sans-serif;
-    }
-} 
+  .page {
+    font-family: var(--main-font), sans-serif;
+  }
+}
 
 .page-background {
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    margin: 0;
-    background-image: 
-        repeating-linear-gradient(
-            to right,
-            #d3d3d3,
-            #d3d3d3 2px,
-            transparent 2px,
-            transparent 4px
-        ),
-
-        repeating-linear-gradient(
-            to bottom,
-            #d3d3d3,
-            #d3d3d3 2px,
-            transparent 2px,
-            transparent 4px
-        ),
-
-        linear-gradient(
-            to bottom,
-            #e7e7e7 0.01%,
-            #1a1a1a 100%
-        );
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  background-image: repeating-linear-gradient(
+      to left,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 }
 
 .accent-weight {
-    font-variation-settings: "wght" var(--font-weight-extra-bold, 800);
+  font-variation-settings: "wght" var(--font-weight-extra-bold, 800);
 }
 
+/* Header downthere */
+
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: #FFFFFF;
-    border: 2px solid var(--main-border-color, #000000);
-    font-family: var(--accent-font);
-    padding-block: var(--header-padding);
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffff;
+  border: 2px solid var(--main-border-color, #000000);
+  font-family: var(--accent-font);
+  padding-block: var(--header-padding);
 }
 
 .rubber {
-    inline-size: var(--rubber-block-width);
-    
-   
-   
+  /*class added to make blocks rubbery */
+  inline-size: var(--rubber-block-width);
 }
 
 .heading {
-    font-size: var(--main-heading-size);
-    line-height: var(--main-heading-line-height);
-    font-family: var(--accent-font);
-    text-transform: uppercase;
-    text-align: center;
- 
+  font-size: var(--main-heading-size);
+  line-height: var(--main-heading-line-height);
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  text-align: center;
 }
-
 
 .subheading {
-    font-size: var(--subheading-size);
-    line-height: var(--subheading-line-height);
-    text-transform: uppercase;
- 
+  font-size: var(--subheading-size);
+  line-height: var(--subheading-line-height);
+  text-transform: uppercase;
 }
 
+/*cards content downthere */
+
 .content {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .cards-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--main-gap);
 }
 
 .card {
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid var(--main-border-color, #000000) 
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--main-border-color, #000000);
 }
 
 .card-heading {
-    text-align: start;
-    align-self: baseline;
-    padding-block: 5px;
-    padding-inline: 10px;
-    font-family: var(--main-font), sans-serif;
-    color: var(--font-color, #000000);
-    font-size: var(--main-font-size, 18px);
-    line-height: var(--main-line-height, 21px);
-    letter-spacing: 0%;
+  text-align: start;
+  align-self: baseline;
+  padding-block: 5px;
+  padding-inline: 10px;
+  font-family: var(--main-font), sans-serif;
+  color: var(--font-color, #000000);
+  font-size: var(--main-font-size, 18px);
+  line-height: var(--main-line-height, 21px);
+  letter-spacing: 0%;
 }
 
 .decorations-container {
-    position: relative;
+  position: relative;
 }
 
 .watermark {
-    position: absolute;
-    top: 25px;
-    right: 13px;
-    color: var(--font-color, #000000);
-    font-family: var(--accent-font, sans-serif);
-    font-size: 14px;
-    text-transform: uppercase;
-    content:'';
-    opacity: 0.5;
-    mix-blend-mode: hard-light;
-    text-shadow:
-        -1px 0 rgba(255, 255, 255, 1),
-        0 1px rgba(255, 255, 255, 1), 
-        1px 0 rgba(255, 255, 255, 1),
-        0 -1px rgba(255, 255, 255, 1);
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  right: 13px;
+  color: var(--font-color, #000000);
+  font-family: var(--accent-font, sans-serif);
+  font-size: 14px;
+  text-transform: uppercase;
+  content: "";
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  text-shadow: -1px 0 rgba(255, 255, 255, 1), 0 1px rgba(255, 255, 255, 1),
+    1px 0 rgba(255, 255, 255, 1), 0 -1px rgba(255, 255, 255, 1);
 }
 
 @supports (-webkit-text-stroke: 1px #fff) {
-    .watermark {
-        -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgba(255, 255, 255, 1);
-        text-shadow: none;
-}
+  .watermark {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 1);
+    text-shadow: none;
+  }
 }
 
 .card-image {
-    object-fit: cover;
-    width: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .text-container {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    gap: 27px;
-    padding-block: 25px;
-    padding-inline: 25px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 27px;
+  padding-block: 25px;
+  padding-inline: 25px;
+}
+
+.my-accented-text {
+  font-family: var(--accent-font, sans-serif);
+  font-weight: var(--font-weight-normal);
 
 }
 
+/* buttons and modal window downthere  */
+
 .buttons-container {
-    align-self: flex-end;
-    display: flex;
-    gap: 5px;
+  align-self: flex-end;
+  display: flex;
+  gap: 5px;
 }
 
 .button {
-    border: 2px solid var(--main-border-color, #000000);
-    background-color: #FFFFFF;
+  border: 2px solid var(--main-border-color, #000000);
+  background-color: #ffffff;
 }
 
 .card__like-button {
-    inline-size: 130px;
-    block-size: 38px;
- 
+  inline-size: 130px;
+  block-size: 38px;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
 }
 
 .button__text {
-    display: block;
-    font-family: var(--accent-font), sans-serif;
-    align-self: center;
-    justify-self: center;
-    font-size: 14px;
-    line-height: 12.6px;
+  display: block;
+  font-family: var(--accent-font), sans-serif;
+  align-self: center;
+  justify-self: center;
+  font-size: 14px;
+  line-height: 12.6px;
+  color: #ffffff;
+  mix-blend-mode: difference;
 }
 
 .card__icon-button {
-    border: none;
-    background-color: transparent;
-    justify-self: center;
-    align-self: center;
-    padding: 0;
+  border: none;
+  background-color: transparent;
+  justify-self: center;
+  align-self: center;
+  padding: 0;
 }
 
 .save-button {
-    inline-size: 335px;
-    block-size: 55px;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    
+  inline-size: 335px;
+  block-size: 55px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
 }
 
 .dialog-button {
-    inline-size: 293px;
-    block-size: 38px;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
+  inline-size: 293px;
+  block-size: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
 }
 
-
 .save-dialog:not([open]) {
-    opacity: 0;
-    pointer-events: none;
-  } 
-
+  opacity: 0;
+  pointer-events: none;
+}
 
 .save-dialog {
-    inline-size: 353px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    border: 2px solid var(--main-border-color, #000000);
-    overflow: hidden;
-    position: fixed; 
-    inset: 0;
+  max-inline-size: 353px;
+  inline-size: 100%;
+  padding-block: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 2px solid var(--main-border-color, #000000);
+  position: fixed;
+  inset: 0;
+  justify-self: center;
 }
 
 .save-dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .dialog-content {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 
 .dialog-text {
-    font-family: var(--accent-font, sans-serif);
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    max-width: 234px;
+  font-family: var(--accent-font, sans-serif);
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  max-width: 234px;
 }
 
 .floppy {
-    width: 21px;
-    height: 21px;
+  width: 28px;
+  height: 28px;
+  color: #ffffff;
+  mix-blend-mode: difference;
 }
 
 .floppy-opened {
-    width: 39px;
-    height: 39px;
+  width: 39px;
+  height: 39px;
 }
 
+/* button conditions starts somwhere here */
 
+.card__like-button:focus,
+.save-button:focus,
+.dialog-button:focus {
+  outline: none;
+}
+
+.card__like-button:focus-visible,
+.save-button:focus-visible,
+.dialog-button:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px var(--main-border-color);
+}
+
+.card__like-button::before,
+.save-button::before,
+.dialog-button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: var(--main-border-color);
+  transition: 0.5s ease-in-out;
+}
+
+.card__like-button:hover::before,
+.save-button:hover::before,
+.dialog-button:hover::before {
+  transform: scaleX(1);
+}
+
+/* image filters */
+.saturate {
+  filter: saturate(390%);
+}
+
+.sepia {
+  filter: sepia(0.6);
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.hue {
+  filter: hue-rotate(0.5turn);
+}
+
+.huesepia {
+  filter: hue-rotate(0.5turn) sepia(0.6);
   
+}
 
+.contrast {
+  filter: contrast(250%);
+}
+
+.brightness {
+  filter: brightness(130%);
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+/* a few media for adaptive */
 
 @media (width <= 375px) {
-    .rubber {
-        max-inline-size: 375px;
-        inline-size: 100vh;
-    }
+  .rubber {
+    max-inline-size: 375px;
+    inline-size: 100vh;
+  }
 
-    .save-button {
-        flex-direction: column;
-        inline-size: 306px;
-        block-size: 84px;
-    }
+  .save-button {
+    flex-direction: column;
+    inline-size: 306px;
+    block-size: 84px;
+  }
+
+  .save-dialog {
+    max-inline-size: 341px;
+    inline-size: 100%;
+  }
 }
+
+/* no footer added, i dont think that actualy a button with a text should be a footer, please don't consider this as a mistake */
