@@ -13,23 +13,24 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
-  <body class="page page-background">
-    <header class="header rubber">
+  <body class="page">
+    <header class="header">
       <h1 class="heading">&lt;/html&gt;</h1>
-      <h2 class="subheading">закрывающий тег</h2>
+      <p class="subheading">закрывающий тег</p>
     </header>
 
     <main class="content">
       <ul class="cards-list">
         <!--1st card-->
-        <li class="card rubber">
-          <h3 class="card-heading accent-weight">
+        <li class="card">
+          <h2 class="card-heading">
             Фритрек и нулевой спринт: Подготовка к работе
-          </h3>
+          </h2>
           <div class="decorations-container">
             <span class="watermark">&lt;/html&gt;</span>
             <img
-              class="card-image saturate"
+              loading="lazy"
+              class="card-image filter-saturate"
               alt="Hendrix photo"
               src="./images/Hendix.png"
             />
@@ -40,16 +41,21 @@
               основами и настроиться на учёбу. И, возможно, подумать, как новые
               знания могут повлиять на ваше будущее.
             </p>
-            <p class="sub-text">
+            <p class="text">
               Свой контент можно писать только тут, по этому поедлю на вводную
-              часть и перейду к сути карточки. <br />
-              zakrivayuschiy-teg-<span class="my-accented-text">f</span>. Press
-              'F' в память почти всех героев карточек ниже.<br />
+              часть и перейду к сути карточки.
+              zakrivayuschiy-teg-f. Press
+              'F' в память почти всех героев карточек ниже.
+              </p>
+              <p class="text">
               Джимми Хендрикс внес свой уникальный
-              <span class="my-accented-text">saturate</span> в музыку. Гитара
+              saturate в музыку. Гитара
               преобрела новое звучание, и начала занимать лидируищие позиции,
               фронт позиции, в музыкальных коллективах. До Хэндрикса музыканты
-              больше уважали клавиши, саксофон итп. <br />
+              больше уважали клавиши, саксофон итп.
+            </p>
+
+            <p class="text">
               В 2009 году журнал «Time» назвал Хендрикса величайшим гитаристом
               всех времён, как и журнал Rolling Stone (трижды - в своих списках
               величайших гитаристов всех времён). Широко признан как один из
@@ -62,6 +68,7 @@
             <div class="buttons-container">
               <button
                 class="button card__icon-button"
+                aria-label="кнопака лайк"
                 type="button"
                 aria-hidden="true"
               >
@@ -98,19 +105,20 @@
                 </svg>
               </button>
 
-              <button class="button card__like-button" type="button">
+              <button class="button-common card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
         </li>
         <!--2nd card-->
-        <li class="card rubber">
-          <h3 class="card-heading accent-weight">1 спринт: Я — чистый лист</h3>
+        <li class="card">
+          <h2 class="card-heading">1 спринт: Я — чистый лист</h2>
           <div class="decorations-container">
             <span class="watermark">&lt;/html&gt;</span>
             <img
-              class="card-image sepia"
+              loading="lazy"
+              class="card-image filter-sepia"
               alt="Slovak photo"
               src="./images/Slovak.png"
             />
@@ -123,20 +131,25 @@
               за этим ощущением скрываются более глубокие вопросы: с чего
               начать? а вдруг будет слишком сложно? что, если я не справлюсь?
             </p>
-            <p class="sub-text">
+            <p class="text">
               Хилель Словак заслужил себе
-              <span class="my-accented-text">сепию</span>, он так же делал из
+              сепию он так же делал из
               красок черт пойми что. Был одим из основателей Redhot Chili
-              Peppers и чуть не стал причиной краха коллектива.<br />
-              Его стиль игры сильно повлиял на звучание ранних RHCP, поскольку
-              пришедший ему на смену Джон Фрушанте был его фанатом. Впоследствии
-              ему было посвящено несколько песен RHCP включая «Otherside»,
-              «Knock Me Down», «My Lovely Man», «Skinny Sweaty Man», «Taste the
-              Pain» и «Feasting On The Flowers».
+              Peppers и чуть не стал причиной краха коллектива.
             </p>
+
+            <p class="text"></p>
+            Его стиль игры сильно повлиял на звучание ранних RHCP, поскольку
+            пришедший ему на смену Джон Фрушанте был его фанатом. Впоследствии
+            ему было посвящено несколько песен RHCP включая «Otherside», «Knock
+            Me Down», «My Lovely Man», «Skinny Sweaty Man», «Taste the Pain» и
+            «Feasting On The Flowers».
+            <p class="text"></p>
+
             <div class="buttons-container">
               <button
                 class="button card__icon-button"
+                aria-label="кнопака лайк"
                 type="button"
                 aria-hidden="true"
               >
@@ -173,21 +186,20 @@
                 </svg>
               </button>
 
-              <button class="button card__like-button" type="button">
+              <button class="button-common card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
         </li>
         <!--3rd card-->
-        <li class="card rubber">
-          <h3 class="card-heading accent-weight">
-            1 спринт: А если не получится?
-          </h3>
+        <li class="card">
+          <h2 class="card-heading">1 спринт: А если не получится?</h2>
           <div class="decorations-container">
             <span class="watermark">&lt;CSS&gt;</span>
             <img
-              class="card-image invert"
+              loading="lazy"
+              class="card-image filter-invert"
               alt="Bonham photo"
               src="./images/Bonham.png"
             />
@@ -198,10 +210,13 @@
               могла быстро померкнуть и смениться ожиданием провала. Или вы,
               наоборот, могли вдохновиться успехами и поверить в себя.
             </p>
-            <p class="sub-text">
-              Джон Бонэм <span class="my-accented-text">инвертировал</span> игру
+            <p class="text">
+              Джон Бонэм инвертировал игру
               на барабанах, достаточно послушать его барабанные соло по
-              семнадцать минут.<br />
+              семнадцать минут.
+            </p>
+
+            <p class="text">
               Специалисты отмечали уникальную мощь его игры и чувство внутренней
               энергетики ритма. «Энциклопедия Британника» назвала Бонема
               «идеальным примером для всех барабанщиков хард-рока, которые пошли
@@ -214,6 +229,7 @@
             <div class="buttons-container">
               <button
                 class="button card__icon-button"
+                aria-label="кнопака лайк"
                 type="button"
                 aria-hidden="true"
               >
@@ -250,23 +266,22 @@
                 </svg>
               </button>
 
-              <button class="button card__like-button" type="button">
+              <button class="button-common card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
         </li>
         <!--4th card-->
-        <li class="card rubber">
-          <h3 class="card-heading accent-weight">
-            2 спринт: Погоня за идеалом
-          </h3>
+        <li class="card">
+          <h2 class="card-heading">2 спринт: Погоня за идеалом</h2>
           <div class="decorations-container">
             <span class="watermark">&lt;/desigions&gt;</span>
             <img
-              class="card-image hue"
+              loading="lazy"
+              class="card-image filter-hue-rotate"
               alt="Cobain photo"
-              src="./images/Cobain.jpg"
+              src="./images/Cobain.png"
             />
           </div>
           <div class="text-container">
@@ -277,11 +292,13 @@
               подвержены перфекционизму и вместо того, чтобы сделать идеально,
               старались просто сделать.
             </p>
-            <p class="sub-text">
+            <p class="text">
               Легендарый Курт Кобейн, не менее легендарно поставил поставил
-              <span class="my-accented-text">zakrivayuschiy-teg</span>, крыша
-              его гаража была в самых разных
-              <span class="my-accented-text">hue</span><br />
+              zakrivayuschiy-teg, крыша
+              его гаража была в самых разных hue
+            </p>
+
+            <p class="text">
               Кобейн считается одним из ключевых музыкантов гранжевой сцены и
               входит в число 100 величайших гитаристов всех времён по версии
               журнала Rolling Stone. В 2014 году был посмертно включён в Зал
@@ -290,6 +307,7 @@
             <div class="buttons-container">
               <button
                 class="button card__icon-button"
+                aria-label="кнопака лайк"
                 type="button"
                 aria-hidden="true"
               >
@@ -326,19 +344,20 @@
                 </svg>
               </button>
 
-              <button class="button card__like-button" type="button">
+              <button class="button-common card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
         </li>
         <!--5th card-->
-        <li class="card rubber">
-          <h3 class="card-heading accent-weight">2 спринт: О тех, кто рядом</h3>
+        <li class="card">
+          <h2 class="card-heading">2 спринт: О тех, кто рядом</h2>
           <div class="decorations-container">
             <span class="watermark">care</span>
             <img
-              class="card-image huesepia"
+              loading="lazy"
+              class="card-image filter-huesepia"
               alt="Morrison photo"
               src="./images/Morrison.png"
             />
@@ -352,10 +371,13 @@
               поддавался. Осваивать что-то новое легче, когда рядом есть
               единомышленники, не правда ли?
             </p>
-            <p class="sub-text">
+            <p class="text">
               Джим Моррисон, тексты его песен. да и музыка- самых разных
-              оттенков <span class="my-accented-text">huesepia</span>. Легенда!
-              Но очень загадочная.<br />
+              оттенков huesepia. Легенда!
+              Но очень загадочная.
+            </p>
+
+            <p class="text">
               Считается одним из самых харизматичных фронтменов в истории
               рок-музыки. Моррисон известен как своим характерным голосом, так и
               своеобразностью собственной сценической фигуры, саморазрушительным
@@ -365,6 +387,7 @@
             <div class="buttons-container">
               <button
                 class="button card__icon-button"
+                aria-label="кнопака лайк"
                 type="button"
                 aria-hidden="true"
               >
@@ -401,21 +424,20 @@
                 </svg>
               </button>
 
-              <button class="button card__like-button" type="button">
+              <button class="button-common card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
         </li>
         <!--6th card-->
-        <li class="card rubber">
-          <h3 class="card-heading accent-weight">
-            3 спринт: Обходные стратегии
-          </h3>
+        <li class="card">
+          <h2 class="card-heading">3 спринт: Обходные стратегии</h2>
           <div class="decorations-container">
             <span class="watermark">&lt;support&gt;</span>
             <img
-              class="card-image contrast"
+              loading="lazy"
+              class="card-image filter-contrast"
               alt="Tsoy photo"
               src="./images/Tsoy.png"
             />
@@ -426,11 +448,14 @@
               вам могло показаться, что решения просто иссякли. Значит, пришло
               время посмотреть на задачу под другим углом.
             </p>
-            <p class="sub-text">
+            <p class="text">
               Виктор Робертович поставил свой закрывающий тег в отличие от всех
-              остальных <span class="my-accented-text">contrast</span> в этом
+              остальных contrast в этом
               списке не из-за разрушительного образа жизни, а из-за рокового
-              знакомства с Икарусом.<br />
+              знакомства с Икарусом.
+            </p>
+
+            <p class="text">
               Группа «Кино» породила так называемый феномен «киномании»; сегодня
               творчество Цоя не утратило среди современных слушателей значимости
               и популярности.
@@ -438,6 +463,7 @@
             <div class="buttons-container">
               <button
                 class="button card__icon-button"
+                aria-label="кнопака лайк"
                 type="button"
                 aria-hidden="true"
               >
@@ -474,21 +500,20 @@
                 </svg>
               </button>
 
-              <button class="button card__like-button" type="button">
+              <button class="button-common card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
         </li>
         <!--7th card-->
-        <li class="card rubber">
-          <h3 class="card-heading accent-weight">
-            3 спринт: Когда опускаются руки
-          </h3>
+        <li class="card">
+          <h2 class="card-heading">3 спринт: Когда опускаются руки</h2>
           <div class="decorations-container">
             <span class="watermark">&lt;lifes-style: none;&gt;</span>
             <img
-              class="card-image brightness"
+              loading="lazy"
+              class="card-image filter-brightness"
               alt="O'Riordan photo"
               src="./images/O'Riordan.png"
             />
@@ -501,11 +526,13 @@
               пожить. В такие моменты очень нужна концентрация. Вспомните,
               откуда вы её черпали.
             </p>
-            <p class="sub-text">
+            <p class="text">
               Долорес написала много хитов, которе очень часто даже в караоке
-              услышать, яракая
-              <span class="my-accented-text">brightness</span> представительница
-              списка героев этой подборки.<br />
+              услышать, яракая brightness представительница
+              списка героев этой подборки.
+            </p>
+
+            <p class="text">
               В возрасте десяти лет она пела в местных пабах, куда её водили
               дяди. Свою первую песню под названием «Calling» Долорес написала в
               возрасте 12 лет.
@@ -513,6 +540,7 @@
             <div class="buttons-container">
               <button
                 class="button card__icon-button"
+                aria-label="кнопака лайк"
                 type="button"
                 aria-hidden="true"
               >
@@ -549,19 +577,20 @@
                 </svg>
               </button>
 
-              <button class="button card__like-button" type="button">
+              <button class="button-common card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
         </li>
         <!--8th card-->
-        <li class="card rubber">
-          <h3 class="card-heading accent-weight">«Сейчас я здесь»</h3>
+        <li class="card">
+          <h2 class="card-heading">«Сейчас я здесь»</h2>
           <div class="decorations-container">
             <span class="watermark">&lt;experience&gt;</span>
             <img
-              class="card-image blur"
+              loading="lazy"
+              class="card-image filter-blur"
               alt="Gilmour photo"
               src="./images/Gilmour.png"
             />
@@ -575,12 +604,15 @@
               получится, но это тот случай, когда важен сам процесс познания.
               Ведь часто путь — и есть результат.
             </p>
-            <p class="sub-text">
+            <p class="text">
               Дэвид Гилмор- единственный предствитель подборки, который все еще
               занимается творчеством, по этому сделаем его фото расплывчатым
-              <span class="my-accented-text">blur</span>. Дэ́вид Джон Ги́лмор —
+              blur. Дэ́вид Джон Ги́лмор —
               британский композитор, гитарист, вокалист, один из лидеров группы
-              Pink Floyd. 78 лет дядьке!<br />
+              Pink Floyd. 78 лет дядьке!
+            </p>
+
+            <p class="text">
               В 2003 году Гилмор занял 82-е место в рейтинге журнала Rolling
               Stone «100 величайших гитаристов всех времён по версии журнала
               Rolling Stone», в аналогичном списке 2011 года того же издания —
@@ -590,6 +622,7 @@
             <div class="buttons-container">
               <button
                 class="button card__icon-button"
+                aria-label="кнопака лайк"
                 type="button"
                 aria-hidden="true"
               >
@@ -626,7 +659,7 @@
                 </svg>
               </button>
 
-              <button class="button card__like-button" type="button">
+              <button class="button-common card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -635,7 +668,7 @@
       </ul>
       <button
         type="button"
-        class="save-button button"
+        class="save-button button-common"
         onclick="window['save-dialog'].showModal()"
         aria-controls="save-dialog"
       >
@@ -654,10 +687,10 @@
         </div>
         <button
           type="submit"
-          class="dialog-button button"
+          class="dialog-button button-common"
           onclick="window['save-dialog'].close()"
         >
-          <span class="button__text">ОК</span>
+          <span class="button__text uppercase-text">ok</span>
         </button>
       </dialog>
     </main>

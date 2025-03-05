@@ -30,6 +30,16 @@
   }
 }
 
+
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--main-border-color);
+}
+
 .sparks {
   fill: var(--heart-sparks-color);
   opacity: 0;
@@ -47,6 +57,7 @@
 
 .contour {
   fill: var(--heart-accent-color);
+  transition: fill 0.1s linear;
 }
 
 .like-icon:hover .core {
@@ -85,9 +96,9 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparkled 0.3s ease-in backwards;
+  animation: sparkled 0.3s ease-in 0.3s;
 }
 
 .like-icon.is-liked .heart {
-  animation: pulse 0.3s ease-in 0.03s backwards;
+  animation: pulse 0.3s ease-in 0.01s;
 }
