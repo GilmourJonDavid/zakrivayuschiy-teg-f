@@ -255,7 +255,7 @@
 
 .dialog-content {
   display: flex;
-  gap: 12px;
+  gap: 20px;
 }
 
 .dialog-text {
@@ -276,6 +276,7 @@
 .floppy-opened {
   width: 39px;
   height: 39px;
+  align-self: center;
 }
 
 /* button conditions starts somwhere here */
