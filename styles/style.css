@@ -349,10 +349,6 @@
 /* a few media for adaptive */
 
 @media (width <= 375px) {
-  .rubber {
-    max-inline-size: 375px;
-    inline-size: 100vh;
-  }
 
   .save-button {
     flex-direction: column;
